@@ -55,7 +55,7 @@ const Project = () => {
         <h1 className="text-4xl font-bold mb-2 tracking-tight">
           My Projects
         </h1>
-        <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full"></div>
+        
       </section>
 
       {/* Projects Grid */}
