@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Button = ({ text }) => {
+const Button = ({ text = "Download PDF" }) => {
   return (
-     <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
-      {text}
-    </button>
+    /* re.pdf ka path aur download attribute */
+    <a href="/resume.pdf" download="resume.pdf">
+      <button className=" text-gray-400  hover:text-white p-3 transition">
+        {text}
+      </button>
+    </a>
   )
 }
 

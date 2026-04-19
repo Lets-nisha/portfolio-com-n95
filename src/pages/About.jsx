@@ -1,94 +1,29 @@
-import Card from "../components/Card";
-import React from 'react'
+import React from 'react';
+import Button from '../components/Button'; 
 
- const About = () =>{
+const About = () => {
   return (
-    <div className="px-6 py-12">
-
-      {/* Hero Section */}
-      <section className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-4xl font-bold mb-6 text-gray-800">
-          About Our Company
-        </h1>
-        <p className="text-gray-600 text-lg">
-          We are a passionate team of developers and designers dedicated 
-          to building modern, scalable, and user-friendly digital solutions.
-        </p>
-      </section>
-
-      {/* Mission & Vision */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
-        <div className="bg-blue-50 p-8 rounded-2xl shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-600">
-            Our Mission
-          </h2>
-          <p className="text-gray-700">
-            To empower businesses with innovative web solutions that drive 
-            growth and create meaningful digital experiences.
-          </p>
-        </div>
-
-        <div className="bg-gray-100 p-8 rounded-2xl shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-            Our Vision
-          </h2>
-          <p className="text-gray-700">
-            To become a globally recognized digital agency known for 
-            creativity, technology excellence, and client satisfaction.
-          </p>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-20">
-        <div>
-          <h3 className="text-3xl font-bold text-blue-600">50+</h3>
-          <p className="text-gray-600">Projects Completed</p>
-        </div>
-        <div>
-          <h3 className="text-3xl font-bold text-blue-600">30+</h3>
-          <p className="text-gray-600">Happy Clients</p>
-        </div>
-        <div>
-          <h3 className="text-3xl font-bold text-blue-600">10+</h3>
-          <p className="text-gray-600">Team Members</p>
-        </div>
-        <div>
-          <h3 className="text-3xl font-bold text-blue-600">5+</h3>
-          <p className="text-gray-600">Years Experience</p>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section>
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Meet Our Team
+    <section className="py-20 px-6 md:px-20 bgColor text-white">
+      <div className="max-w-4xl  mx-auto border-l-4 mt-9 mb-10 border-blue-600 pl-8">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
+          About Me
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card
-            image="https://via.placeholder.com/400"
-            title="John Doe"
-            description="Frontend Developer with expertise in React and UI design."
-          />
-
-          <Card
-            image="https://via.placeholder.com/400"
-            title="Jane Smith"
-            description="Backend Engineer specializing in scalable APIs."
-          />
-
-          <Card
-            image="https://via.placeholder.com/400"
-            title="David Lee"
-            description="UI/UX Designer focused on clean and modern interfaces."
-          />
+        
+        <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+          Hi, I'm a <strong>MERN Stack Developer . </strong>
+          I love turning complex problems into simple, beautiful, and intuitive digital experiences. 
+          <br /><br />
+          With a strong command over <strong>React.js</strong> and <strong>Tailwind CSS</strong>, I build 
+          fast, responsive front-end interfaces, while also ensuring robust back-end logic to deliver 
+          a seamless end-to-end performance.
+        </p>
+        
+        <div className=" border border-gray-400 w-40   flex items-center gap-4">
+          <Button text="Download Resume" />
         </div>
-      </section>
-
-    </div>
+      </div>
+    </section>
   );
-}
+};
 
-
-export default About
+export default About;

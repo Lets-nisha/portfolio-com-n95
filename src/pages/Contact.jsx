@@ -1,89 +1,84 @@
-import React from 'react'
+import React from 'react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react'; // Install lucide-react if not added
 
- const Contact = () =>{
+const Contact = () => {
   return (
-    <div className="px-6 py-12">
+    <section className="py-24  bgColor text-white relative overflow-hidden">
+      {/* Background Glows */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] -z-10"></div>
 
-      {/* Heading */}
-      <section className="text-center  mb-16">
-        <h1 className="text-4xl font-bold mb-4 text-gray-800">
-          Contact Us
-        </h1>
-        <p className="text-gray-600 text-lg">
-          Have a project in mind? We'd love to hear from you.
-        </p>
-      </section>
-
-      {/* Contact Section */}
-      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-
-        {/* Left Side - Info */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-6 text-blue-600">
-            Get in Touch
-          </h2>
-
-          <p className="text-gray-600 mb-6">
-            Fill out the form and our team will get back to you within 24 hours.
-          </p>
-
-          <div className="space-y-4 text-gray-700">
-            <p>📧 info@company.com</p>
-            <p>📞 +91 98765 43210</p>
-            <p>📍 India</p>
-          </div>
-        </div>
-
-        {/* Right Side - Form */}
-        <form className="bg-white shadow-lg rounded-2xl p-8 space-y-6">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
+          {/* Left Side: Text & Info */}
           <div>
-            <label className="block mb-2 text-gray-700 font-medium">
-              Name
-            </label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-            />
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
+              Let's Connect.
+            </h2>
+            <p className="text-gray-400 text-lg mb-10 leading-relaxed">
+              I'm currently looking for new opportunities. My inbox is always open. 
+              Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 group">
+                <div className="p-4 bg-slate-900 border border-slate-800 rounded-2xl group-hover:border-blue-500 transition-colors">
+                  <Mail className="text-blue-500" size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500 uppercase font-bold">Email Me</p>
+                  <p className="text-lg font-medium">nishabii9520@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 group">
+                <div className="p-4 bg-slate-900 border border-slate-800 rounded-2xl group-hover:border-indigo-500 transition-colors">
+                  <MapPin className="text-indigo-500" size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500 uppercase font-bold">Location</p>
+                  <p className="text-lg font-medium">Rampur</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <label className="block mb-2 text-gray-700 font-medium">
-              Email
-            </label>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-            />
+          {/* Right Side: Glassmorphic Form */}
+          <div className="relative">
+            <div className="bg-slate-900/40 border border-white/10 p-8 rounded-[2rem] backdrop-blur-xl shadow-2xl relative z-10">
+              <form className="space-y-5">
+                <input 
+                  type="text" 
+                  placeholder="Full Name"
+                  className="w-full bg-slate-950/50 border border-slate-800 rounded-2xl px-5 py-4 focus:ring-2 focus:ring-blue-500/50 outline-none transition-all placeholder:text-gray-600"
+                />
+                <input 
+                  type="email" 
+                  placeholder="Email Address"
+                  className="w-full bg-slate-950/50 border border-slate-800 rounded-2xl px-5 py-4 focus:ring-2 focus:ring-blue-500/50 outline-none transition-all placeholder:text-gray-600"
+                />
+                <textarea 
+                  rows="4"
+                  placeholder="Your Message..."
+                  className="w-full bg-slate-950/50 border border-slate-800 rounded-2xl px-5 py-4 focus:ring-2 focus:ring-blue-500/50 outline-none transition-all placeholder:text-gray-600 resize-none"
+                ></textarea>
+                
+                <button className="w-full group flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-blue-500/20 active:scale-95">
+                  Send Message
+                  <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                </button>
+              </form>
+            </div>
+            
+            {/* Decorative Element */}
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600/20 rounded-full blur-3xl"></div>
           </div>
 
-          <div>
-            <label className="block mb-2 text-gray-700 font-medium">
-              Message
-            </label>
-            <textarea
-              rows="4"
-              placeholder="Write your message..."
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
-          >
-            Send Message
-          </button>
-
-        </form>
-
-      </section>
-
-    </div>
+        </div>
+      </div>
+    </section>
   );
-}
+};
 
-
-export default Contact
+export default Contact;
