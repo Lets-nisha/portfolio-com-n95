@@ -6,106 +6,100 @@ import netflix from '../assets/netflix.png'
 import ems from '../assets/ems.png'
 import Foodie from '../assets/Foodie.png'
 
- const Project = () =>{
+const Project = () => {
 
   const projects = [
     {
-      title: "Employee management system",
-      image: ems ,
-      description: "  EMS web built with React.",
+      title: "EMS System",
+      image: ems,
+      description: "React-based employee management.",
       link: "https://employee-management-system-maju.vercel.app/"
     },
     {
-      title: "Spotify Clone Website",
-      image:  spotify,
-      description: "Responsive music website design.",
-      link: spotify
-
+      title: "Spotify Clone",
+      image: spotify,
+      description: "Responsive music streaming UI.",
+      link: "#" 
     },
     {
       title: "Portfolio",
       image: portfolio,
-      description: "Personal branding website with clean UI.",
+      description: "Clean & professional branding.",
       link: "https://portfolio-website-n95.netlify.app/"
     },
-      {
+    {
       title: "Grocery Store",
       image: grocery,
-      description: "Grocery Store website with clean UI.",
+      description: "E-commerce platform with cart.",
       link: "https://grocery-website-n95.netlify.app"
     },
-      {
+    {
       title: "Netflix Clone",
       image: netflix,
-      description: "Netflix Clone website with clean UI.",
+      description: "Cinematic movie listing UI.",
       link: "https://netflix-clone-green-xi-41.vercel.app/"
     },
     {
-      title: "Foodie Delivery Website",
+      title: "Foodie App",
       image: Foodie,
-      description: "Foodie Delivery website with clean UI.",
+      description: "Modern food delivery interface.",
       link: "https://foodie-n95.netlify.app/"
     },
-     
   ];
 
   return (
-    <div className="px-6 py-12 bgColor text-white">
+    <div className="px-6 py-16 bgColor text-white">
 
       {/* Heading */}
-      <section className="text-center  mb-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
-          Our Project's
+      <section className="text-center mb-12">
+        <h1 className="text-4xl font-bold mb-2 tracking-tight">
+          My Projects
         </h1>
-        <p className="  text-lg">
-          Some of the projects we’ve worked on.
-        </p>
+        <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full"></div>
       </section>
 
       {/* Projects Grid */}
-      <section className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative group rounded-2xl overflow-hidden shadow-lg mb-17"
+            className="group bg-[#1a1a1a] border border-white/5 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300"
           >
-            {/* Image */}
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
-            />
+            {/* Image Container - Height reduced to h-48 */}
+            <div className="relative h-48 overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent opacity-60"></div>
+            </div>
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-60 
-                            flex flex-col justify-center items-center 
-                            opacity-0 group-hover:opacity-70 
-                            transition duration-500 text-center px-4">
-
-              <h3 className="text-white text-xl font-semibold mb-2">
+            {/* Content Area - Minimal padding */}
+            <div className="p-5">
+              <h3 className="text-lg font-semibold mb-1 group-hover:text-blue-400 transition-colors">
                 {project.title}
               </h3>
-
-              <p className="text-gray-200 text-sm mb-4">
+              <p className="text-gray-400 text-xs mb-4 line-clamp-1">
                 {project.description}
               </p>
 
-              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  View Project
-                </a>
-              </button>
-
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full py-2 text-center bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium rounded-lg transition-colors"
+              >
+                View Demo
+              </a>
             </div>
           </div>
         ))}
 
       </section>
-
     </div>
   );
 }
 
-
-export default Project 
+export default Project;
