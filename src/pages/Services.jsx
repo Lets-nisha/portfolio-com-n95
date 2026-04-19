@@ -55,16 +55,25 @@ const Services = () => {
         </p>
       </section>
 
-      {/* Services Grid */}
-      <section className="max-w-7xl h-full mx-auto  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+      {/* Services Grid   */}
+      <section className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8">
         {services.map((service, index) => (
-          <ServiceCart 
-            key={index}
-            image={service.image}
-            title={service.title}
-            description={service.description}
-            buttonText="Learn More"
-          />
+          <div 
+            key={index} 
+            className="group relative transition-all duration-500 hover:-translate-y-3"
+          >
+           
+            <div className="absolute inset-0 bg-blue-500/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+            
+            <div className="relative z-10">
+              <ServiceCart 
+                image={service.image}
+                title={service.title}
+                description={service.description}
+                buttonText="Learn More"
+              />
+            </div>
+          </div>
         ))}
       </section>
 
