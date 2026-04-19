@@ -14,6 +14,7 @@ Responsive Portfolio website built using React and Tailwind CSS.
 - About
 - Services
 - Project
+- Skills
 - Contact
 
 ## Run Locally
