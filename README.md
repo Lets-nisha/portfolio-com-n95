@@ -1,7 +1,7 @@
-# Company Website - React
+# Portfolio Website - React
 
 ## Overview
-Responsive company marketing website built using React and Tailwind CSS.
+Responsive Portfolio website built using React and Tailwind CSS.
 
 ## Tech Stack
 - React
@@ -13,7 +13,7 @@ Responsive company marketing website built using React and Tailwind CSS.
 - Home
 - About
 - Services
-- Portfolio
+- Project
 - Contact
 
 ## Run Locally
@@ -24,5 +24,5 @@ npm run dev
 Deployed using Vercel by connecting GitHub repository.
 
 ## Vercel Deploy Link 
-company-website-xi-sandy.vercel.app
+Portfolio-website-n95.vercel.app
 
