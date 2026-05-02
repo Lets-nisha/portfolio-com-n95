@@ -10,20 +10,30 @@ const Contact = () => {
 
  const [result, setResult] = useState("");
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    formData.append("access_key", "53adba2d-a220-47c3-b769-e2980a40ab06");
+ const onSubmit = async (event) => {
+  event.preventDefault();
+  setResult("Sending...."); 
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
+  const formData = new FormData(event.target);
+  formData.append("access_key", "53adba2d-a220-47c3-b769-e2980a40ab06");
 
-    const data = await response.json();
-    setResult(data.success ? "Success!" : "Error");
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: formData
+  });
 
-  };
+  const data = await response.json();
+
+  if (data.success) {
+    setResult("Success!");
+    event.target.reset();  
+  } else {
+    console.log("Error", data);
+    setResult(data.message);
+  }
+};
+
+  
 
   return (
     <section className="py-24  bgColor text-white relative overflow-hidden">
