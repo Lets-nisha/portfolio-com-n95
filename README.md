@@ -1,7 +1,7 @@
-# Company Website - React
+# Porfolio Website - React
 
 ## Overview
-Responsive company marketing website built using React and Tailwind CSS.
+Responsive portfolio website built using React and Tailwind CSS.
 
 ## Tech Stack
 - React
@@ -13,7 +13,7 @@ Responsive company marketing website built using React and Tailwind CSS.
 - Home
 - About
 - Services
-- Portfolio
+- project
 - Contact
 
 ## Run Locally
