@@ -15,7 +15,7 @@ const Home = () =>{
              I'm Nisha
           </h1>
           <h1 className="text-5xl  font-bold mb-6 text-blue-500">
-          Full Stack <span className="text-white">Developer</span>
+          Front-end <span className="text-white">Developer</span>
             
           </h1>
       
