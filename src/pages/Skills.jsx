@@ -16,7 +16,7 @@ const Skills = () => {
     },
     {
       title: "Tools & Concept",
-      skills: ["Git", "GitHub","Figma", "VS Code ,","Responsive Design",", REST APIs","DOM Manipulation"],
+      skills: ["Git", "GitHub","Figma", "VS Code ","Responsive Design"," REST APIs","DOM Manipulation"],
       icon: "🛠️",
       accent: "from-orange-500 to-yellow-500"
     }
