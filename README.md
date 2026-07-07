@@ -24,5 +24,5 @@ npm run dev
 Deployed using Vercel by connecting GitHub repository.
 
 ## Vercel Deploy Link 
-company-website-xi-sandy.vercel.app
+portfoliocomn95.vercel.app
 
