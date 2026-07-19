@@ -23,12 +23,6 @@ const Project = () => {
       link: "https://employee-management-system-maju.vercel.app/"
     },
     {
-      title: "Spotify Clone",
-      image: spotify,
-      description: "Responsive music streaming UI.",
-      link: "#" 
-    },
-    {
       title: "Portfolio",
       image: portfolio,
       description: "Clean & professional branding.",
@@ -40,12 +34,7 @@ const Project = () => {
       description: "E-commerce platform with cart.",
       link: "https://grocery-website-n95.netlify.app"
     },
-    {
-      title: "Netflix Clone",
-      image: netflix,
-      description: "Cinematic movie listing UI.",
-      link: "https://netflix-clone-green-xi-41.vercel.app/"
-    },
+   
     {
       title: "Foodie App",
       image: Foodie,
