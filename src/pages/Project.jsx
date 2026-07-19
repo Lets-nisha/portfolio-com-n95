@@ -5,10 +5,17 @@ import grocery from '../assets/grocery.png'
 import netflix from '../assets/netflix.png'
 import ems from '../assets/ems.png'
 import Foodie from '../assets/Foodie.png'
+import AiProject from '../assets/aiproject.png'
 
 const Project = () => {
 
   const projects = [
+     {
+      title: "Ai Project Management Saas",
+      image: AiProject,
+      description: "React-based Ai Project management Saas.",
+      link: "https://ai-project-management-saas.vercel.app/"
+    },
     {
       title: "EMS System",
       image: ems,
