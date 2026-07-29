@@ -10,7 +10,7 @@ const About = () => {
         </h2>
         
         <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-          Hi, I'm a <strong>MERN Stack Developer . </strong>
+          Hi, I'm a <strong>Full Stack Developer . </strong>
           I love turning complex problems into simple, beautiful, and intuitive digital experiences. 
           <br /><br />
           With a strong command over <strong>React.js</strong> and <strong>Tailwind CSS</strong>, I build 
