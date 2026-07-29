@@ -4,13 +4,13 @@ const Skills = () => {
   const skillGroups = [
     {
       title: "Frontend Development",
-      skills: ["HTML5", "CSS3", "JavaScript", "React.js","Next.js","GSAP", "Tailwind CSS", "Rest API's"],
+      skills: ["HTML5", "CSS3", "Scss","JavaScript", "React.js","Next.js","GSAP", "Tailwind CSS", "Rest API's"],
       icon: "🎨",
       accent: "from-blue-500 to-cyan-400"
     },
     {
       title: "Backend & Database",
-      skills: ["Java","Firebase", "Node.js", "Express.js", "MongoDB" , "SQL"],
+      skills: ["Java","Firebase", "Node.js", "Express.js", "MongoDB" , "SQL", "POSTMAN"],
       icon: "⚙️",
       accent: "from-purple-500 to-pink-500"
     },
