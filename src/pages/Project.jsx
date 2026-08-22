@@ -6,10 +6,18 @@ import netflix from '../assets/netflix.png'
 import ems from '../assets/ems.png'
 import Foodie from '../assets/Foodie.png'
 import AiProject from '../assets/aiproject.png'
+import Ecommerce from '../assets/e-commerce.png'
+
 
 const Project = () => {
 
   const projects = [
+   {
+  title: "Aura Beauty — E-Commerce Landing Page",
+  image: Ecommerce, 
+  description: "Responsive React & Tailwind CSS botanical skincare landing page featuring luxury UI aesthetic, clean architecture, and custom icons.",
+  link: "https://aura-beauty-ecommerce.vercel.app/"  
+},
      {
       title: "Ai Project Management Saas",
       image: AiProject,
