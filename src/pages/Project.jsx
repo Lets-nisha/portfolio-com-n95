@@ -13,7 +13,7 @@ const Project = () => {
 
   const projects = [
    {
-  title: "Aura Beauty — E-Commerce Landing Page",
+  title: "Aura Beauty — E-Commerce  ",
   image: Ecommerce, 
   description: "Responsive React & Tailwind CSS botanical skincare landing page featuring luxury UI aesthetic, clean architecture, and custom icons.",
   link: "https://aura-beauty-ecommerce.vercel.app/"  
