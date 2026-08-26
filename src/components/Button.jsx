@@ -1,17 +1,30 @@
-import React from 'react'
+import React from "react";
 
-const Button = ({ text = "Download PDF", onClick  }) => {
-  return (
-    /* re.pdf ka path aur download attribute */
-    <a href="/resume.pdf" download="resume.pdf">
-      <button 
-        onClick={onClick}
-        className=" text-gray-400  hover:text-white p-3 transition">
-        
+const Button = ({
+  text = "Button",
+  onClick,
+  download = false,
+}) => {
+  if (download) {
+    return (
+      <a
+        href="/resume.pdf"
+        download="Nisha-Turkey-Resume.pdf"
+        className="text-gray-400 hover:text-white p-3 transition"
+      >
         {text}
-      </button>
-    </a>
-  )
-}
+      </a>
+    );
+  }
 
-export default Button
+  return (
+    <button
+      onClick={onClick}
+      className="text-gray-400 hover:text-white p-3 transition"
+    >
+      {text}
+    </button>
+  );
+};
+
+export default Button;
