@@ -1,41 +1,41 @@
-import React from 'react'
- 
-import Button from "../components/Button";
+import React from 'react';
+import Button from '../components/Button';
 
-const Home = () =>{
-
-  
-
+const Home = () => {
   return (
     <div className="p-8 bgColor text-white">
-      <section className="text-center py-26 w-full  justify-center items-center">
- 
-          <h1 className="text-5xl  font-bold mb-6 text-blue-500">
-            <span className="text-white">Hi, </span>
-             I'm Nisha
-          </h1>
-          <h1 className="text-5xl  font-bold mb-6 text-blue-500">
-          Full Stack <span className="text-white">Developer</span>
-            
-          </h1>
-      
-  
-      
-        {/* <img src="" alt="" /> */}
-        <p className=' text-sm text-white mt-15  mb-25'>
-          With a strong focus on clean code and best practices, 
-          I strive to deliver high-quality web solutions that meet client needs and exceed expectations. <br />
-          Whether it's building a new website from scratch or enhancing an existing one,  
-          I'm dedicated to creating seamless and visually appealing digital experiences.
+      <section className="min-h-[80vh] w-full flex flex-col justify-center items-center text-center">
 
+        {/* Greeting */}
+        <h1 className="text-5xl md:text-6xl font-bold mb-5 text-blue-500">
+          <span className="text-white">Hi, I'm </span>
+          Nisha
+        </h1>
+
+        {/* Role */}
+        <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <span className="text-blue-500">MERN Stack</span>{' '}
+          <span className="text-white">Developer</span>
+        </h2>
+
+        {/* Introduction */}
+        <p className="text-sm md:text-lg text-gray-300 max-w-3xl leading-8 mb-10">
+          I build modern, responsive and scalable web applications with a
+          strong focus on clean code, performance and user experience.
+          <br />
+          I turn ideas into functional digital experiences using modern
+          full-stack technologies.
         </p>
-     
-        
-      </section>
-      
-    </div>
 
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap justify-center gap-4">
+          <Button text="View My Work" />
+          <Button text="Download Resume" />
+        </div>
+
+      </section>
+    </div>
   );
-}
+};
 
 export default Home;
