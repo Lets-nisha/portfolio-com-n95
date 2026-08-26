@@ -9,14 +9,23 @@ const About = () => {
           About Me
         </h2>
         
-        <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-          Hi, I'm a <strong>Full Stack Developer . </strong>
-          I love turning complex problems into simple, beautiful, and intuitive digital experiences. 
-          <br /><br />
-          With a strong command over <strong>React.js</strong> and <strong>Tailwind CSS</strong>, I build 
-          fast, responsive front-end interfaces, while also ensuring robust back-end logic to deliver 
-          a seamless end-to-end performance.
-        </p>
+     <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+  Hi, I'm a <strong className="text-white">MERN Stack Developer</strong> who
+  enjoys turning ideas into fast, scalable, and meaningful digital products.
+
+  <br /><br />
+
+  My expertise lies in building full-stack web applications using
+  <strong className="text-white"> MongoDB, Express.js, React.js, and Node.js</strong>.
+  From designing responsive interfaces and reusable React components to building
+  secure REST APIs and managing databases, I enjoy working across the entire
+  development lifecycle.
+
+  <br /><br />
+
+  I'm passionate about writing clean, maintainable code and continuously
+  learning new technologies to build better solutions for real-world problems.
+</p>
         
         <div className=" border border-gray-400 w-40   flex items-center gap-4">
           <Button text="Download Resume" />
