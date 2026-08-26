@@ -1,36 +1,186 @@
-import React from 'react';
-import Button from '../components/Button'; 
+import React from "react";
+import Button from "../components/Button";
 
 const About = () => {
   return (
-    <section className="py-20 px-6 md:px-20 bgColor text-white">
-      <div className="max-w-4xl  mx-auto border-l-4 mt-9 mb-10 border-blue-600 pl-8">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
-          About Me
-        </h2>
-        
-     <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-  Hi, I'm a <strong className="text-white">MERN Stack Developer</strong> who
-  enjoys turning ideas into fast, scalable, and meaningful digital products.
+    <section className="min-h-screen bgColor text-white px-6 md:px-16 py-20">
 
-  <br /><br />
+      <div className="max-w-6xl mx-auto">
 
-  My expertise lies in building full-stack web applications using
-  <strong className="text-white"> MongoDB, Express.js, React.js, and Node.js</strong>.
-  From designing responsive interfaces and reusable React components to building
-  secure REST APIs and managing databases, I enjoy working across the entire
-  development lifecycle.
+        {/* Heading */}
+        <div className="mb-14">
+          <p className="text-blue-500 font-semibold tracking-widest uppercase mb-3">
+            About Me
+          </p>
 
-  <br /><br />
-
-  I'm passionate about writing clean, maintainable code and continuously
-  learning new technologies to build better solutions for real-world problems.
-</p>
-        
-        <div className=" border border-gray-400 w-40   flex items-center gap-4">
-          <Button text="Download Resume" />
+          <h2 className="text-4xl md:text-6xl font-bold">
+            Building ideas into{" "}
+            <span className="text-blue-500">
+              digital experiences.
+            </span>
+          </h2>
         </div>
+
+
+        {/* Main Content */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+
+          {/* Left Side */}
+          <div>
+
+            <p className="text-gray-300 text-lg leading-8 mb-6">
+              Hi, I'm{" "}
+              <span className="text-white font-semibold">
+                Nisha
+              </span>
+              , a passionate{" "}
+              <span className="text-blue-400 font-semibold">
+                MERN Stack Developer
+              </span>
+              {" "}who enjoys building modern and scalable web applications.
+            </p>
+
+            <p className="text-gray-400 leading-7 mb-6">
+              I love transforming ideas into clean, responsive and
+              user-friendly digital products. My development approach focuses
+              on writing maintainable code, creating intuitive interfaces and
+              building reliable backend systems.
+            </p>
+
+            <p className="text-gray-400 leading-7 mb-8">
+              From designing React interfaces to developing REST APIs,
+              authentication systems and database-driven applications, I enjoy
+              working across the entire development stack.
+            </p>
+
+            {/* Button */}
+            <Button text="Download Resume" download={true} />
+
+          </div>
+
+
+          {/* Right Side */}
+          <div className="grid grid-cols-2 gap-5">
+
+            {/* Card 1 */}
+            <div className="group border border-gray-800 rounded-2xl p-6 bg-white/[0.03] hover:border-blue-500 hover:-translate-y-1 transition duration-300">
+
+              <div className="text-3xl mb-4">
+                💻
+              </div>
+
+              <h3 className="text-xl font-semibold mb-2">
+                Full Stack
+              </h3>
+
+              <p className="text-gray-400 text-sm leading-6">
+                Building complete web applications from frontend to backend.
+              </p>
+
+            </div>
+
+
+            {/* Card 2 */}
+            <div className="group border border-gray-800 rounded-2xl p-6 bg-white/[0.03] hover:border-blue-500 hover:-translate-y-1 transition duration-300">
+
+              <div className="text-3xl mb-4">
+                ⚡
+              </div>
+
+              <h3 className="text-xl font-semibold mb-2">
+                Performance
+              </h3>
+
+              <p className="text-gray-400 text-sm leading-6">
+                Creating fast, responsive and optimized applications.
+              </p>
+
+            </div>
+
+
+            {/* Card 3 */}
+            <div className="group border border-gray-800 rounded-2xl p-6 bg-white/[0.03] hover:border-blue-500 hover:-translate-y-1 transition duration-300">
+
+              <div className="text-3xl mb-4">
+                🧩
+              </div>
+
+              <h3 className="text-xl font-semibold mb-2">
+                Clean Code
+              </h3>
+
+              <p className="text-gray-400 text-sm leading-6">
+                Writing reusable, scalable and maintainable code.
+              </p>
+
+            </div>
+
+
+            {/* Card 4 */}
+            <div className="group border border-gray-800 rounded-2xl p-6 bg-white/[0.03] hover:border-blue-500 hover:-translate-y-1 transition duration-300">
+
+              <div className="text-3xl mb-4">
+                🚀
+              </div>
+
+              <h3 className="text-xl font-semibold mb-2">
+                Problem Solver
+              </h3>
+
+              <p className="text-gray-400 text-sm leading-6">
+                Turning complex problems into simple digital solutions.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* Bottom Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-10 border-t border-gray-800">
+
+          <div>
+            <h3 className="text-3xl font-bold text-blue-500">
+              MERN
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Stack
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-bold text-blue-500">
+              React
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Frontend
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-bold text-blue-500">
+              Node
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Backend
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-bold text-blue-500">
+              MongoDB
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Database
+            </p>
+          </div>
+
+        </div>
+
       </div>
+
     </section>
   );
 };
