@@ -33,7 +33,7 @@ const Home = () => {
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center gap-4">
           <Button text="View My Work"
-              onClick={() => navigate('/projects')}
+              onClick={() => navigate('/project')}
             />
           <Button text="Download Resume" />
         </div>
