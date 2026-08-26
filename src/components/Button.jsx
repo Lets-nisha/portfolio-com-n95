@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Button = ({ text = "Download PDF" }) => {
+const Button = ({ text = "Download PDF", onClick  }) => {
   return (
     /* re.pdf ka path aur download attribute */
     <a href="/resume.pdf" download="resume.pdf">
-      <button className=" text-gray-400  hover:text-white p-3 transition">
+      <button 
+        onClick={onClick}
+        className=" text-gray-400  hover:text-white p-3 transition">
+        
         {text}
       </button>
     </a>
