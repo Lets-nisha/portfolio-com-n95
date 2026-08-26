@@ -1,7 +1,10 @@
 import React from 'react';
 import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="p-8 bgColor text-white">
       <section className="min-h-[80vh] w-full flex flex-col justify-center items-center text-center">
@@ -29,7 +32,9 @@ const Home = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center gap-4">
-          <Button text="View My Work" />
+          <Button text="View My Work"
+              onClick={() => navigate('/projects')}
+            />
           <Button text="Download Resume" />
         </div>
 
