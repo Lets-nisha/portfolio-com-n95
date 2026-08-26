@@ -13,7 +13,7 @@ const About = () => {
             About Me
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-bold">
+          <h2 className="text-2xl md:text-4xl font-bold">
             Building ideas into{" "}
             <span className="text-blue-500">
               digital experiences.
