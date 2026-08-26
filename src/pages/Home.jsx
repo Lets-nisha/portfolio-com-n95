@@ -35,7 +35,9 @@ const Home = () => {
           <Button text="View My Work"
               onClick={() => navigate('/project')}
             />
-          <Button text="Download Resume" />
+          <Button text="Download Resume" 
+              download={true}
+            />
         </div>
 
       </section>
